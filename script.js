@@ -27,8 +27,8 @@ function chooseExpenses() {
         let q1 = prompt("Введите обязательную статью расходов в этом месяце", ""),
             q2 = prompt("Во сколько обойдётся?", "");
     
-		if ( (typeof(q1))==='string' && (typeof(q1)) != null && (typeof(q2)) != null
-		    && q1 != "" && q2 != "" && q1.length < 50) {
+	if ( (typeof(q1))==='string' && (typeof(q1)) != null && (typeof(q2)) != null
+	    && q1 != "" && q2 != "" && q1.length < 50) {
             appData.expenses[q1] = q2;
         } else {
             i--;
